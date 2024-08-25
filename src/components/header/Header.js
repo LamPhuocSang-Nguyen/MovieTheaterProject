@@ -11,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const pages = ["Home", "Top Anime", "Watch"];
@@ -46,7 +45,7 @@ function ResponsiveAppBar() {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="static" color="ochre">
+      <AppBar position="static" color="ochre" sx={{height:"10vh"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box
@@ -57,12 +56,26 @@ function ResponsiveAppBar() {
               sx={{
                 width: "150px",
                 height: "auto",
-                transform: "translateY(10%)",
+                transform: "translateY(9)",
                 display: { xs: "none", md: "flex" },
               }}
             >
               
             </Box>
+
+
+            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+              {pages.map((page) => (
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block", fontWeight:"400", fontSize:"1rem", letterSpacing:"0.0000232rem" }}
+                >
+                  {page}
+                </Button>
+              ))}
+            </Box>
+
 
             <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
               <IconButton
@@ -99,36 +112,6 @@ function ResponsiveAppBar() {
                   </MenuItem>
                 ))}
               </Menu>
-            </Box>
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-            <Typography
-              variant="h5"
-              noWrap
-              component="a"
-              href="#app-bar-with-responsive-menu"
-              sx={{
-                mr: 2,
-                display: { xs: "flex", md: "none" },
-                flexGrow: 1,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              LOGO
-            </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  {page}
-                </Button>
-              ))}
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
