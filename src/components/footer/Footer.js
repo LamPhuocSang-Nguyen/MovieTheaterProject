@@ -5,7 +5,7 @@ import Grid from "@mui/material/Grid";
 import { Container, Link, Typography } from "@mui/material";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "rgb(18, 18, 18)",
   ...theme.typography.body2,
   padding: theme.spacing(1),
   textAlign: "center",
@@ -14,9 +14,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Footer() {
   return (
-    <Container maxWidth="xl" disableGutters>
-      <Grid container spacing={1}>
-        <Grid item xs={12}  sm={12} md={6} lg={3} xl={3}>
+    <Container maxWidth="xl" disableGutters colorc="rgb(18, 18, 18)" sx={{marginTop:"70vh"}}>
+      <Grid container spacing={1} sx={{backgroundColor:"rgb(18, 18, 18)"}}>
+        <Grid item xs={12}  sm={12} md={6} lg={3} xl={3} sx={{borderRight:"2px solid white"}}>
           <Item>
             <Link href="#">support@blockbuster.com</Link>
           </Item>
@@ -31,7 +31,7 @@ export default function Footer() {
           </Item>
         </Grid>
 
-        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2}>
+        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2} sx={{borderRight:"2px solid white"}}>
           <Item>
             <Link href="#">About BlockBuster</Link>
           </Item>
@@ -49,7 +49,7 @@ export default function Footer() {
           </Item>
         </Grid>
 
-        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2}>
+        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2} sx={{borderRight:"2px solid white"}}>
           <Item>
             <Link href="#">My Account</Link>
           </Item>
@@ -64,7 +64,7 @@ export default function Footer() {
           </Item>
         </Grid>
 
-        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2}>
+        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2} sx={{borderRight:"2px solid white"}}>
           <Item>
             <Link href="#">Terms of Use</Link>
           </Item>
