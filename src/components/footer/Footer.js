@@ -18,61 +18,61 @@ export default function Footer() {
       <Grid container spacing={1} sx={{backgroundColor:"rgb(18, 18, 18)"}}>
         <Grid item xs={12}  sm={12} md={6} lg={3} xl={3} sx={{borderRight:"2px solid white"}}>
           <Item>
-            <Link href="#">support@blockbuster.com</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">support@blockbuster.com</Link>
           </Item>
           <Item>
-            <Link href="#">+1 234 509 798</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">+1 234 509 798</Link>
           </Item>
           <Item>
-            <Link href="#">www.blockbuster.com</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">www.blockbuster.com</Link>
           </Item>
           <Item>
-            <Link href="#">97 Ilchester Road, Muirhead, KY15 2GP</Link>
-          </Item>
-        </Grid>
-
-        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2} sx={{borderRight:"2px solid white"}}>
-          <Item>
-            <Link href="#">About BlockBuster</Link>
-          </Item>
-          <Item>
-            <Link href="#">About BlockBuster</Link>
-          </Item>
-          <Item>
-            <Link href="#">About BlockBuster</Link>
-          </Item>
-          <Item>
-            <Link href="#">About BlockBuster</Link>
-          </Item>
-          <Item>
-            <Link href="#">About BlockBuster</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">97 Ilchester Road, Muirhead, KY15 2GP</Link>
           </Item>
         </Grid>
 
         <Grid item xs={12}  sm={12} md={6} lg={2} xl={2} sx={{borderRight:"2px solid white"}}>
           <Item>
-            <Link href="#">My Account</Link>
+            <Link sx={{textDecoration:"none", color: "white"}}  href="#">About BlockBuster</Link>
           </Item>
           <Item>
-            <Link href="#">My Account</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">About BlockBuster</Link>
           </Item>
           <Item>
-            <Link href="#">My Account</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">About BlockBuster</Link>
           </Item>
           <Item>
-            <Link href="#">My Account</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">About BlockBuster</Link>
+          </Item>
+          <Item>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">About BlockBuster</Link>
           </Item>
         </Grid>
 
         <Grid item xs={12}  sm={12} md={6} lg={2} xl={2} sx={{borderRight:"2px solid white"}}>
           <Item>
-            <Link href="#">Terms of Use</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">My Account</Link>
           </Item>
           <Item>
-            <Link href="#">Terms of Use</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">My Account</Link>
           </Item>
           <Item>
-            <Link href="#">Terms of Use</Link>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">My Account</Link>
+          </Item>
+          <Item>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">My Account</Link>
+          </Item>
+        </Grid>
+
+        <Grid item xs={12}  sm={12} md={6} lg={2} xl={2} sx={{borderRight:"2px solid white"}}>
+          <Item>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">Terms of Use</Link>
+          </Item>
+          <Item>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">Terms of Use</Link>
+          </Item>
+          <Item>
+            <Link sx={{textDecoration:"none", color: "white"}} href="#">Terms of Use</Link>
           </Item>
         </Grid>
 
