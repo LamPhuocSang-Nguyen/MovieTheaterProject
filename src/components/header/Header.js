@@ -45,7 +45,7 @@ function ResponsiveAppBar() {
 
   return (
     <ThemeProvider theme={theme}>
-      <AppBar position="static" color="ochre" sx={{height:"10vh"}}>
+      <AppBar position="static" color="ochre" sx={{height:"10vh", opacity:"0.9"}}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box

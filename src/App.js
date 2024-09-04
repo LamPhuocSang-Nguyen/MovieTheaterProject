@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     // </Router>
     <>
       <Header />
+      <LandingPage />
       <Footer />
     </>
   );
