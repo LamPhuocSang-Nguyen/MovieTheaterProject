@@ -22,8 +22,18 @@ export default function MyButton(props){
         sx={{
             backgroundColor:"ochre.main",
           borderRadius:"10px",
-          padding:"10px",
-          fontSize:"20px",
+          padding:{
+            xs:"8px 4px",
+            sm:"8px 10px",
+            md:"10px",
+            lg:"10px"
+          },
+          fontSize:{
+            xs:"8px",
+            sm:"14px",
+            md:"20px",
+            lg:"20px"
+          },
           textTransform:"uppercase"
           
            }}
