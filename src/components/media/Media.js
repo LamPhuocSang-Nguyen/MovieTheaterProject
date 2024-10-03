@@ -21,7 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Media(props) {
   useEffect(() => {
-    AOS.init({duration:1000});
+    AOS.init();
     AOS.refresh();
   }, []);
 
@@ -32,7 +32,7 @@ export default function Media(props) {
   const youtobeId = props.youtobeId;
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Container maxWidth="100%">
       <Grid container>
         <Grid
           Item
@@ -42,8 +42,12 @@ export default function Media(props) {
           md={6}
           lg={6}
           xl={6}
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+          }}
         >
-          <Typography sx={{ color: "white" }}>{heading}</Typography>
+          <Typography sx={{ color: "white" }}>{heading}</Typography>    
           <Typography sx={{ color: "white" }}>{content}</Typography>
         </Grid>
         <Grid Item data-aos="fade-left" xs={12} sm={6} md={6} lg={6} xl={6}>
@@ -51,12 +55,12 @@ export default function Media(props) {
             component="img"
             src={image}
             style={{
-              width: "100%",
-              height: "100%",
+              maxWidth: "100%",
+              maxHeight: "100%",
             }}
           ></Box>
         </Grid>
       </Grid>
-    </Box>
+    </Container>
   );
 }

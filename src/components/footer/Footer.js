@@ -14,7 +14,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Footer() {
   return (
-    <Container maxWidth="xxl" disableGutters color="rgb(18, 18, 18)">
+    <Container maxWidth="100%" disableGutters color="rgb(18, 18, 18)">
       <Grid container spacing={1} sx={{backgroundColor:"rgb(18, 18, 18)"}}>
         <Grid item xs={12}  sm={12} md={6} lg={3} xl={3} sx={{borderRight:"2px solid white"}}>
           <Item>

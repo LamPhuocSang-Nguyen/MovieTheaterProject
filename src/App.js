@@ -14,9 +14,9 @@ function App() {
     //   </Routes>
     // </Router>
     <>
-      <Header />
+      {/* <Header /> */}
       <LandingPage />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
