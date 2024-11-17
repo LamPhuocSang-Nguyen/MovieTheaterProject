@@ -36,25 +36,27 @@ export default function Media(props) {
       <Grid container>
         <Grid
           Item
-          data-aos="fade-right"
+          data-aos={right ? "fade-right" : "fade-left"}
           xs={12}
           sm={6}
           md={6}
           lg={6}
           xl={6}
-          style={{
+          sx={{
             maxWidth: "100%",
             maxHeight: "100%",
+            display: {xs: "block", md : right ? "block" : "none"}
           }}
         >
-          <Typography sx={{ color: "white" }}>{heading}</Typography>    
-          <Typography sx={{ color: "white" }}>{content}</Typography>
+          <Typography variant='h3' textAlign="center" mb={6} sx={{ color: "white" }}>{heading}</Typography>
+          <Typography variant='h5' textAlign="center" sx={{ color: "white" }}>{content}</Typography>
         </Grid>
-        <Grid Item data-aos="fade-left" xs={12} sm={6} md={6} lg={6} xl={6}>
+        <Grid Item data-aos={right ? "fade-right" : "fade-left"}
+              xs={12} sm={6} md={6} lg={6} xl={6}>
           <Box
             component="img"
             src={image}
-            style={{
+            sx={{
               maxWidth: "100%",
               maxHeight: "100%",
             }}
